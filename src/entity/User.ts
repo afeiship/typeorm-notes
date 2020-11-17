@@ -1,16 +1,17 @@
 import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
+import Abstract from './Abstract';
 
-@Entity()
-export class User {
+@Entity('users')
+export class User extends Abstract {
 
   @PrimaryGeneratedColumn()
   id: number;
 
   @Column()
-  firstName: string;
+  first_name: string;
 
   @Column()
-  lastName: string;
+  last_name: string;
 
   @Column()
   age: number;
