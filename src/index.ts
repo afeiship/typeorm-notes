@@ -6,8 +6,8 @@ createConnection().then(async connection => {
   const manager = connection.manager;
   // create
   const user = await manager.create(User, {
-    first_name: 'afei',
-    last_name: 'zheng',
+    firstName: 'afei',
+    lastName: 'zheng',
     age: 100
   })
 
