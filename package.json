@@ -1,14 +1,27 @@
 {
-  "name": "@jswork/typeorm-notes",
-  "version": "1.0.0",
-  "description": "Typeorm notes.",
-  "homepage": "https://github.com/afeiship/typeorm-notes",
-  "author": {
-    "name": "afeiship",
-    "email": "1290657123@qq.com"
-  },
-  "license": "MIT",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
-  }
+   "name": "@jswork/typeorm-notes",
+   "version": "1.0.0",
+   "description": "Typeorm notes.",
+   "homepage": "https://github.com/afeiship/typeorm-notes",
+   "author": {
+      "name": "afeiship",
+      "email": "1290657123@qq.com"
+   },
+   "license": "MIT",
+   "publishConfig": {
+      "registry": "https://registry.npmjs.org"
+   },
+   "devDependencies": {
+      "ts-node": "3.3.0",
+      "@types/node": "^8.0.29",
+      "typescript": "3.3.3333"
+   },
+   "dependencies": {
+      "typeorm": "0.2.29",
+      "reflect-metadata": "^0.1.10",
+      "sqlite3": "^4.0.3"
+   },
+   "scripts": {
+      "start": "ts-node src/index.ts"
+   }
 }
