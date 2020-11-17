@@ -1,16 +1,19 @@
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
+import { Entity, OneToMany,JoinColumn,PrimaryGeneratedColumn, Column } from "typeorm";
 import Abstract from './Abstract';
+import { Photo } from './Photo'
 
 @Entity('users')
 export class User extends Abstract {
 
   @Column()
-  first_name: string;
+  firstName: string;
 
   @Column()
-  last_name: string;
+  lastName: string;
 
   @Column()
   age: number;
 
+  @OneToMany(type => Photo, photo => photo.user)
+  photos: Photo[];
 }
